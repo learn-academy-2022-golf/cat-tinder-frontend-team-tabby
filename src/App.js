@@ -25,12 +25,6 @@ function App() {
       <Route path="/coffeeedit" element={<CoffeeEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-{/* <Home/>
-<CoffeeIndex/>
-<CoffeeShow/>
-<CoffeeNew/>
-<CoffeeEdit/>
-// <NotFound/> */}
 <Footer/>
 </>
   )
