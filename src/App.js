@@ -18,8 +18,7 @@ function App() {
 <Header/>
 <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/coffeeindex" element={<CoffeeIndex coffees={coffees}/>} />
-      <Route path="/coffeeindex" element={<CoffeeIndex coffees={mockCoffees}/>} />
+      <Route path="/coffeeindex" element={<CoffeeIndex coffees={coffees}/>} /
       <Route path="/coffeeshow/:id" element={<CoffeeShow coffees={coffees}/>} />
       <Route path="/coffeenew" element={<CoffeeNew />} />
       <Route path="/coffeeedit" element={<CoffeeEdit />} />
