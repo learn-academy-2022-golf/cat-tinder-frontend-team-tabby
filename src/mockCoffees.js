@@ -1,4 +1,4 @@
-const coffees = [
+const mockCoffees = [
     {
         id: 1,
         name: "Blueberry Coffee",
@@ -11,7 +11,7 @@ const coffees = [
       {
         id: 2,
         name: "Pumpkin Iced Latte",
-        age: "9 ounces",
+        size: "9 ounces",
         milk_type: "almond milk",
         bio: "I am good hot and cold",
         image: "https://www.whiskaffair.com/wp-content/uploads/2020/10/Iced-Pumpkin-Spice-Latte-2-3-1.jpg"
@@ -19,11 +19,11 @@ const coffees = [
       {
         id: 3,
         name: "Hot Chai Latte",
-        age: "12 ounces",
+        size: "12 ounces",
         milk_type: "oat milk",
         bio: "I am good hot and cold",
         image: "https://cooktoria.com/wp-content/uploads/2018/10/Strarbucks-Chai-Tea-Latte-Recipe-SQ-1.jpg"
       }
     ]
 
-    export default coffees
+    export default mockCoffees
