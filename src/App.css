@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  margin: 2rem 0;
+}
+
+.coffee-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
