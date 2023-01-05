@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from "react-router-dom"
-import {Card, CardBody, CardTitle, CardImg, CardText} from 'reactstrap' 
+import {Card, CardBody, CardTitle, CardImg, CardText, Button} from 'reactstrap' 
+import { NavLink } from "react-router-dom"
 
 const CoffeeShow = ({ coffees }) => {
   const { id } = useParams()
@@ -26,7 +27,13 @@ const CoffeeShow = ({ coffees }) => {
           {coffee.bio}
         </CardText>
       </CardBody>
+      <Button>
+      <NavLink to={`/coffeeedit/${coffee.id}`} className="nav-link">
+    Edit Coffee Profile
+    </NavLink>
+    </Button>
     </Card>
+   
 
   )
 }

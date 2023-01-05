@@ -10,7 +10,7 @@ const CoffeeNew = ({ createCoffee }) => {
     milk: "",
     bio: ""
   })
-
+  
   const handleChange = (e) => {
     setNewCoffee({...newCoffee, [e.target.name]: e.target.value})
   }
