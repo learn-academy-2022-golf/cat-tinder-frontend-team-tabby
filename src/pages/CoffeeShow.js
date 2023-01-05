@@ -32,6 +32,9 @@ const CoffeeShow = ({ coffees }) => {
         Edit Coffee Profile
         </NavLink>
       </Button>
+      <NavLink>
+        <Button>Delete Coffee Profile</Button>
+      </NavLink>
     </Card>
    
 

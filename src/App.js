@@ -50,6 +50,18 @@ function App() {
     .then((payload) => readCoffee())
     .catch((errors) => console.log("Coffee update errors:", errors))
   }
+
+  const deleteCoffee = (id) => {
+    fetch(`http://localhost:3000/coffees/${id}`, {
+      headers: {
+        "content-Type" : "application/json"
+      },
+      method: "DELETE"
+      })
+    .then((response) => response.json())
+    .then((payload) => readCoffee())
+    .catch((errors) => console.log("delete errors:", errors))
+  }
   return (
 <>
 <Header/>
@@ -57,7 +69,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/coffeeindex" element={<CoffeeIndex coffees={coffees}/>} />
       <Route path="/coffeeindex" element={<CoffeeIndex coffees={mockCoffees}/>} />
-      <Route path="/coffeeshow/:id" element={<CoffeeShow coffees={coffees}/>} />
+      <Route path="/coffeeshow/:id" element={<CoffeeShow coffees={coffees} deleteCoffee={deleteCoffee}/>} />
       <Route path="/coffeenew" element={<CoffeeNew createCoffee={createCoffee} />} />
       <Route path="/coffeeedit/:id"element={<CoffeeEdit coffees={coffees} updateCoffee={updateCoffee} />}
       />
