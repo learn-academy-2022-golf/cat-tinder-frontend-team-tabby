@@ -35,7 +35,7 @@ return (
           <Input
             name="name"
             onChange={handleChange}
-            placeholder="What is your name?"
+            value= {updateCoffee.name}
             type="text"
           />
         </FormGroup>
@@ -46,7 +46,7 @@ return (
           <Input
             name="size"
             onChange={handleChange}
-            placeholder="What is your size?"
+            value= {updateCoffee.size}
             type="number"
           />
         </FormGroup>
@@ -57,7 +57,7 @@ return (
           <Input
             name="bio"
             onChange={handleChange}
-            placeholder="What is your bio?"
+            value= {updateCoffee.bio}
             type="text"
           />
         </FormGroup>
@@ -68,7 +68,7 @@ return (
           <Input
             name="image"
             onChange={handleChange}
-            placeholder="Share your image"
+            value= {updateCoffee.image}
             type="url"
           />
         </FormGroup>

@@ -28,10 +28,10 @@ const CoffeeShow = ({ coffees }) => {
         </CardText>
       </CardBody>
       <Button>
-      <NavLink to={`/coffeeedit/${coffee.id}`} className="nav-link">
-    Edit Coffee Profile
-    </NavLink>
-    </Button>
+        <NavLink to={`/coffeeedit/${coffee.id}`} className="nav-link">
+        Edit Coffee Profile
+        </NavLink>
+      </Button>
     </Card>
    
 
