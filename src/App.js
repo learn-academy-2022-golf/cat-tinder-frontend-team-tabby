@@ -13,6 +13,9 @@ import mockCoffees from './mockCoffees'
 
 function App() {
   const [coffees, setCoffees] = useState(mockCoffees)
+  const createCoffee = (coffee)=>{
+    console.log("Created Coffee:", coffee)
+  }
   return (
 <>
 <Header/>
@@ -21,7 +24,7 @@ function App() {
       <Route path="/coffeeindex" element={<CoffeeIndex coffees={coffees}/>} />
       <Route path="/coffeeindex" element={<CoffeeIndex coffees={mockCoffees}/>} />
       <Route path="/coffeeshow/:id" element={<CoffeeShow coffees={coffees}/>} />
-      <Route path="/coffeenew" element={<CoffeeNew />} />
+      <Route path="/coffeenew" element={<CoffeeNew createCoffee={createCoffee} />} />
       <Route path="/coffeeedit" element={<CoffeeEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
